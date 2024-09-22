@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useParams, useNavigate } from 'react-router-dom';
 import { useHackathon } from '../context/GlobalData';
 import { Container, Paper, Typography, Chip, Box, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
@@ -25,7 +25,8 @@ const StatusChip = styled(Chip)(({ status }) => ({
 
 const HackathonDetails = () => {
     const { id } = useParams();
-    const navigate = useNavigate();  // Add navigate hook
+
+    const navigate = useNavigate();
     const [value, setValue] = React.useState(0);
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
         setValue(newValue);
@@ -85,6 +86,7 @@ const HackathonDetails = () => {
             'aria-controls': `simple-tabpanel-${index}`,
         };
     }
+
 
     return (
         <>
@@ -161,6 +163,7 @@ const HackathonDetails = () => {
                     </div>
                 </Container>
             </div>
+
 
             <Container maxWidth="lg">
                 <Typography variant="body1" mt={2}>
