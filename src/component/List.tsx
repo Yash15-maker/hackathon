@@ -184,7 +184,6 @@ export default function List() {
                     }}>
                         {filteredHackathons.length === 0 ? (
                             <div style={{ textAlign: 'center', marginTop: '50px' }}>
-                                {/* You can replace the spinner or add a conditional for loading */}
                                 {isLoading ? (
                                     <div className='spinner-absolute'><span className="loader"></span></div>
                                 ) : (
