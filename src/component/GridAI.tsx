@@ -45,7 +45,8 @@ export default function GridAI() {
                 }}>
                     Why Participate in <span style={{
                         color: '#44924C',
-                        fontWeight: 'bold'
+                        fontWeight: 'bold',
+                        paddingLeft: '10px'
                     }}>AI Challenges?</span>
                 </div>
                 <div className="card-grid">
