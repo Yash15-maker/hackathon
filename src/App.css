@@ -230,6 +230,23 @@ hr {
   border-radius: 50%;
 }
 
+.selected-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.filter-chip {
+  background-color: #7b8b95;
+  color: white;
+  border-radius: 24px;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+}
+
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
